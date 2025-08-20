@@ -1,24 +1,251 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playbook - Preescolar Sesión 2</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
+<header>
+<h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2 Kínder</strong></h1>
+<div class="header-widgets">
+<div class="timer-container">
+<span id="timer">⏱️ 00:00</span>
+<button id="startStop">Start</button>
+<button id="reset">Reset</button>
+</div>
+<div class="theme-toggle">
+<i class="fas fa-sun"></i>
+<label class="switch">
+<input type="checkbox" id="theme-toggle-input">
+<span class="slider round"></span>
+</label>
+<i class="fas fa-moon"></i>
+</div>
+</div>
+</header>
+<div class="main-container">
+<aside class="activity-list">
+<h2>Actividades</h2>
+<ul>
+<li><a href="#activity-0">📝</a></li>
+<li><a href="#activity-1">1</a></li>
+<li><a href="#activity-2">2</a></li>
+<li><a href="#activity-3">3</a></li>
+<li><a href="#activity-4">4</a></li>
+</ul>
+<div class="sidebar-info">
+<p>💡 Cada actividad está diseñada para ser lúdica y captar la atención de los más pequeños.</p>
+<p>⏱️ Los tiempos son una guía. Sé flexible y adáptate al ritmo del grupo.</p>
+</div>
+</aside>
+<main class="content">
+<div class="progress-bar">
+<div class="progress"></div>
+</div>
+<button id="toggle-dialogues">Mostrar todos los diálogos</button>
+<div class="activity-card" id="activity-0">
+<h2><span class="book-icon">📝</span> De un Vistazo: Misión: ¡Súper Aprendices en Acción!</h2>
+<p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para esta aventura de aprendizaje.</p>
+<div class="overview-table-container">
+<table>
+<thead>
+<tr>
+<th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+<th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<strong>Objetivos de Aprendizaje:</strong>
+<ul>
+<li>Describir los pasos de cómo aprenden una nueva habilidad (observar, intentar, practicar).</li>
+<li>Entender que los errores son parte del aprendizaje.</li>
+<li>Colaborar para enseñar una habilidad simple a un compañero.</li>
+</ul>
+<strong>Secuencia Didáctica de la Misión:</strong>
+<ul>
+<li>⚡ Actividad 1: Bienvenida y Calentamiento Cerebral</li>
+<li>⚡ Actividad 2: Planteamiento del Reto y Cuento</li>
+<li>⚡ Actividad 3: ¡Manos a la Obra! (Actividad Principal)</li>
+<li>⚡ Actividad 4: Puesta en Común y Cierre de la Misión</li>
+</ul>
+<strong>Entregable Clave:</strong>
+<ul>
+<li>Comunicación clara de los pasos para adquirir una nueva habilidad.</li>
+<li>Demostración de paciencia y apoyo activo al compañero en rol de "maestro".</li>
+<li>Persistencia y resiliencia ante los desafíos durante el rol de "aprendiz".</li>
+</ul>
+</td>
+<td>
+<strong>Materiales Específicos:</strong>
+<ul>
+<li>Papel y crayones.</li>
+<li>Objetos para una tarea simple (ej. atar un lazo grande, armar una torre de 3 bloques en orden).</li>
+</ul>
+<strong>Preparación Previa para ESTA Sesión:</strong>
+<ol>
+<li><strong>Revisión de Materiales:</strong> Asegurar que todos los materiales estén completos, limpios y listos para ser repartidos.</li>
+<li><strong>Preparación del Espacio:</strong> Organizar el aula para facilitar la actividad (círculo en el suelo, mesas de trabajo, espacio para moverse).</li>
+<li><strong>Familiarización:</strong> Leer el playbook completo para entender el flujo narrativo, los diálogos y las transiciones. Tener clara la historia o el reto que se presentará.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="activity-card" id="activity-1">
+<h2>⚡ Actividad 1: ¡Calentando Motores de Aprendizaje! ⏰ 5 min</h2>
+<p>¡Es hora de despertar nuestra curiosidad y preparar el cuerpo para nuevas ideas con un juego súper divertido!</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: Juego de Mímica: "Aprendiendo a..." ⏰ 3 min</h3>
+<p>El facilitador inicia un juego de mímica, actuando de forma exagerada cómo se aprende una nueva habilidad, como andar en bici (con tambaleos, caídas graciosas y reintentos). Invita a los niños a adivinar y luego a imitar. Se puede sugerir que otros niños actúen también. (Proyectar Diapositiva 1)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Hola, equipo de futuros genios! ¡Qué gusto verlos hoy listos para una nueva aventura! ¿Están listos para calentar nuestros cerebritos y cuerpos con un juego? ¡Vamos a ver qué tan buenos somos para adivinar! ¿Alguna vez han tratado de hacer algo nuevo y no les salió a la primera? ¡A mí sí! Observen bien lo que voy a hacer, ¿qué estoy tratando de aprender? (Actúa de forma exagerada cómo aprende a andar en bici: tambaleándose mucho, como si fuera a caer, haciendo ruidos de esfuerzo, luego un pequeño avance y una "caída" suave y graciosa. Luego simula volver a subirse a la bici con determinación). ¡Eso es! ¡Estoy aprendiendo a andar en bici! ¿Qué hice cuando me caí? ¡Me levanté y lo intenté de nuevo! ¡Y así, poco a poquito, se va aprendiendo! ¿Alguien más quiere intentar aprender algo con mímica? ¡Pueden actuar cómo aprenden a saltar, a dibujar, a hacer un nudo! ¡Vamos a ver!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: ¡Los Errores son Nuestros Amigos! ⏰ 2 min</h3>
+<p>Después del juego de mímica, el facilitador guía una breve conversación sobre cómo los "errores" o las "caídas" son parte del proceso de aprendizaje y nos ayudan a mejorar. Se enfatiza que equivocarse es una oportunidad para aprender. (Proyectar Diapositiva 2)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Qué bien lo hicieron! ¡Son unos excelentes mimos! Cuéntenme, cuando yo estaba aprendiendo a andar en bici, ¿qué me pasó? (Esperar respuestas: "Se cayó", "Se tambaleó", "No le salía"). ¡Exacto! ¿Y eso es malo? ¡Nooo! ¡Esas caídas y esos tambaleos me enseñaron cómo no caer la próxima vez! ¡Son como pequeños maestros que nos dicen: "Inténtalo de otra forma", "Prueba con tu otro pie"! Así que, cada vez que nos equivocamos, ¡estamos más cerca de aprender! ¡Los errores son nuestros amigos que nos ayudan a ser cada vez más listos y hábiles! ¿Verdad que sí? ¡Un aplauso para todos los que se atreven a intentar y a aprender de sus errores!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activity-card" id="activity-2">
+<h2>⚡ Actividad 2: El Secreto del Títere Aprendiz ⏰ 5 min</h2>
+<p>Vamos a recordar cómo nuestros amigos, las máquinas que aprenden, se vuelven más inteligentes y cómo nosotros también podemos hacerlo.</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: Recordando al Amigo Aprendiz ⏰ 3 min</h3>
+<p>El facilitador introduce la sesión recordando al "Títere Aprendiz" o el concepto de cómo las máquinas de la sesión anterior mejoraban, conectando este concepto con la idea de que los niños también son aprendices. Se invita a los niños a recordar las estrategias del títere. (Proyectar Diapositiva 3)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Equipo, recuerdan a nuestro amigo el Títere Aprendiz de la vez pasada? ¡Era tan curioso y quería aprender de todo! ¿Quién se acuerda de cómo le hacía para mejorar? ¿Cómo se volvía más inteligente y no se equivocaba tanto? (Esperar respuestas: "Practicando", "Intentando muchas veces", "Aprendiendo de sus errores", "Observando"). ¡Eso es! ¡El Títere Aprendiz era un experto en observar cómo hacían los demás, luego intentaba él mismo, y si no le salía, practicaba y practicaba! ¡Y cuando se equivocaba, no se rendía! ¡Aprendía de eso y volvía a intentarlo! ¿Se acuerdan que las máquinas inteligentes también aprenden así? ¡Ellas también necesitan ver muchos ejemplos y practicar mucho para ser muy, muy listas!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: ¡Nosotros, los Súper Aprendices y Maestros! ⏰ 2 min</h3>
+<p>El facilitador establece la conexión con la actividad del día, donde los niños no solo serán aprendices, sino también "maestros", enfatizando la colaboración y la emoción de compartir el conocimiento. (Proyectar Diapositiva 4)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">Pues adivinen qué, mis pequeños exploradores del aprendizaje... ¡Hoy, ustedes y yo seremos como ese títere, pero mucho más! ¡Hoy seremos APRENDICES y también seremos MAESTROS! ¿Se imaginan? ¡Vamos a aprender a enseñar y a aprender de nuestros amigos! ¡Será una misión donde trabajaremos juntos para descubrir lo divertido que es aprender cosas nuevas y ayudar a otros a aprenderlas también! ¡Seremos como equipos de superhéroes del aprendizaje! ¿Están listos para esta doble misión de aprender y enseñar?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activity-card" id="activity-3">
+<h2>⚡ Actividad 3: ¡Maestros y Aprendices al Rescate! ⏰ 25 min</h2>
+<p>Es hora de poner en práctica lo que hemos aprendido sobre cómo se aprende. ¡Trabajaremos en equipo para enseñar y descubrir nuevas habilidades!</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: Formando Equipos de Aprendizaje ⏰ 5 min</h3>
+<p>El facilitador divide a los niños en parejas, utilizando una dinámica sencilla (ej. "busquen a alguien con un color de camiseta parecido", "el que esté a tu lado"). Presenta los objetos para la tarea simple (atar un lazo grande, armar una torre de 3 bloques en orden). Explica claramente los roles de "Maestro" y "Aprendiz", enfatizando que el maestro guía con paciencia y el aprendiz persiste. Distribuye los sombreros o gafetes para diferenciar los roles y hacer la transición más divertida. (Proyectar Diapositiva 5)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Atención, atención, exploradores del conocimiento! Para esta parte de la misión, vamos a trabajar en equipos de dos. ¡Busquen a un compañero! (Dar un momento para que se organicen las parejas, ayudando si es necesario). ¡Muy bien! Ahora, les voy a mostrar los objetos con los que vamos a trabajar hoy. ¡Miren! (Mostrar los objetos claramente, como la cuerda grande para nudos o los bloques). La tarea es... (explicar la tarea simple, ej. "hacer un nudo como este" o "armar una torre de 3 bloques en este orden"). Uno de ustedes será el 'Maestro' y el otro será el 'Aprendiz'. ¡Y para que sea más divertido y sepamos quién es quién, vamos a usar estos sombreros mágicos o gafetes especiales! (Mientras reparte, asegurándose de que cada pareja tenga un "maestro" y un "aprendiz"). El 'Maestro' es como un guía muy amable: explica con palabras claras, muestra con sus manos y tiene mucha paciencia. El 'Aprendiz' es como un investigador valiente: escucha con atención, intenta con sus manos, y si no le sale a la primera, ¡lo vuelve a intentar sin rendirse! ¿Listos para comenzar?</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: La Misión de Enseñar y Aprender (Ronda 1) ⏰ 10 min</h3>
+<p>Las parejas comienzan la actividad. El "Maestro" explica y demuestra la tarea simple al "Aprendiz", permitiendo que este intente. El "Aprendiz" la intenta, se equivoca si es necesario, y practica. El facilitador circula activamente entre las parejas, observando las interacciones, dando ánimo específico y haciendo preguntas abiertas para fomentar la reflexión sobre el proceso de aprendizaje y la colaboración (ej. "¿qué paso sigue?", "¿cómo te sientes al intentarlo?"). (Proyectar Diapositiva 6)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Adelante, Maestros y Aprendices! ¡Comiencen su misión! 'Maestros', recuerden explicar muy clarito, como si le hablaran a un robot, paso a paso. ¡Pueden usar sus manos para mostrar! Y 'Aprendices', ¡no tengan miedo de intentar! Recuerden que los errores son escalones para aprender. (Circula entre las parejas). ¡Wow, qué bien lo están haciendo, equipo! 'Maestros', ¿qué pasos le están explicando a su 'Aprendiz'? ¡Recuerden ser muy claros y pacientes! ¿Cómo podrían mostrarlo de otra forma si su compañero no lo entiende? ¿Y si lo intentan despacito? 'Aprendices', ¿cómo se sienten cuando intentan algo nuevo y no sale a la primera? ¡No se preocupen si no sale a la primera, los errores son nuestros amigos que nos enseñan a mejorar! ¡Así es como nuestras máquinas inteligentes también aprenden! ¡Sigan practicando con mucho entusiasmo! ¡Recuerden los pasos: Observar, Intentar, Practicar! ¡Están haciendo un trabajo fantástico!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 3: ¡Cambio de Roles! (Ronda 2) ⏰ 10 min</h3>
+<p>Después de un tiempo apropiado (aproximadamente 10 minutos para la primera ronda), el facilitador anuncia el cambio de roles con la frase "¡Cambio de clase!". Los niños que eran "Maestros" ahora son "Aprendices" y viceversa. Se repite el proceso, permitiendo a todos experimentar ambos roles y reforzando las lecciones aprendidas. El facilitador continúa circulando y apoyando, animando la paciencia y la perseverancia. (Proyectar Diapositiva 7)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Atención, atención, equipo de súper aprendices! ¡Escucho la señal para el cambio! ¡Es hora de la magia! ¡Cambio de clase! ¡Ahora los que eran 'Maestros' van a ponerse su sombrero o gafete de 'Aprendiz', y los que eran 'Aprendices' se convertirán en 'Maestros'! ¡Eso es! ¡Tómense un momento para cambiar sus roles y sus sombreros! ¡Ahora tienen una nueva oportunidad de enseñar y de aprender! ¡Maestros, ahora es su turno de guiar con paciencia! ¡Aprendices, prepárense para intentar y practicar con perseverancia! ¡Recuerden lo que aprendimos: paciencia y perseverancia son la clave para aprender! ¡Adelante, la misión continúa! ¡Estoy seguro de que lo harán genial en sus nuevos roles!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="activity-card" id="activity-4">
+<h2>⚡ Actividad 4: ¡Celebrando Nuestras Habilidades! ⏰ 5 min</h2>
+<p>Es momento de compartir lo que aprendimos y celebrar que somos unos expertos en aprender y enseñar.</p>
+<div class="steps">
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 1: Compartiendo Logros y Experiencias ⏰ 2 min</h3>
+<p>El facilitador reúne al grupo en un círculo y pide a algunas parejas que compartan brevemente su experiencia. Se les puede pedir que demuestren la tarea o que cuenten qué fue lo más desafiante y lo más divertido de ser maestro o aprendiz. Se resalta la importancia de la colaboración y el apoyo mutuo. (Proyectar Diapositiva 8)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Equipo de super aprendices, vengan todos aquí! ¡Qué misión tan increíble hemos tenido hoy! ¡Me encantó verlos trabajar juntos y ayudarse! ¿Quién quiere contarnos cómo les fue? ¿Fue fácil ser 'Maestro'? ¿Qué hicieron para ayudar a su 'Aprendiz'? (Esperar algunas respuestas y elogiar la paciencia y la claridad). ¿Y ser 'Aprendiz'? ¿Qué sintieron cuando no les salía a la primera? ¿Qué hicieron para seguir intentando? (Esperar respuestas y aplaudir la perseverancia). ¡Cuéntenme, cuéntenme! ¿Qué fue lo más emocionante que aprendieron hoy sobre cómo aprendemos cosas nuevas y cómo nos ayudamos unos a otros? ¡Es tan bonito aprender en equipo!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 2: Mi Dibujo de Aprendiz ⏰ 2 min</h3>
+<p>Cada niño recibe papel y crayones. Se les pide dibujar una cosa nueva que hayan aprendido a hacer recientemente. Puede ser la tarea de hoy (el nudo, la torre de bloques) o cualquier otra habilidad que les encante aprender. El facilitador refuerza la idea de que aprender es un proceso continuo y que los errores son parte de ello, invitando a los niños a mostrar sus dibujos. (Proyectar Diapositiva 9)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Ahora, para nuestra última parte de la misión, vamos a dibujar! Les voy a dar un papel y unos crayones. Quiero que cada uno dibuje una cosa nueva que hayan aprendido a hacer. Puede ser lo que aprendieron hoy con sus compañeros (como hacer un nudo o la torre de bloques), o tal vez aprendieron a atarse los zapatos, a dibujar una estrella, a saltar la cuerda... ¡lo que sea que les encante aprender! Piensen en esa vez que observaron, intentaron y practicaron hasta que lo lograron. ¡Dibújenlo! ¡Y si se equivocan, no importa, es parte de aprender! ¡Pueden intentar otra vez o dibujar otra cosa!</p>
+</div>
+</div>
+</div>
+<div class="step-card">
+<div class="step-content">
+<h3>Paso 3: ¡Misión Cumplida, Súper Aprendices! ⏰ 1 min</h3>
+<p>El facilitador concluye la sesión con un mensaje de refuerzo positivo, celebrando el esfuerzo, la perseverancia, la colaboración y la capacidad de aprender de los errores que demostraron los niños. Se les felicita por ser "Súper Aprendices y Maestros". (Proyectar Diapositiva 10)</p>
+</div>
+<div class="collapsible">
+<button type="button" class="collapsible-button">Diálogo Sugerido</button>
+<div class="collapsible-content">
+<p class="dialogue assistant">¡Miren qué dibujos tan increíbles! ¡Cada uno de esos dibujos es una muestra de que son unos verdaderos campeones del aprendizaje! ¡Son unos artistas, pero también unos aprendices y maestros asombrosos! ¡Recuerden, cada vez que intentamos algo nuevo, practicamos y no nos rendimos aunque nos equivoquemos, nos volvemos más inteligentes y más hábiles! ¡Y cuando ayudamos a un amigo a aprender, somos unos maestros maravillosos! ¡Misión cumplida, equipo! ¡Son los mejores aprendices y maestros que conozco! ¡Un aplauso enorme para todos ustedes! ¡Hasta la próxima aventura de aprendizaje! ¡Son geniales!</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
